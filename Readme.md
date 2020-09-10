@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Поляков](https://up.htmlacademy.ru/htmlcss/29/user/1445237).
-* Наставник: [Анна Пономарёва] (https://htmlacademy.ru/profile/id153610).
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
