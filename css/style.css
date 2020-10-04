@@ -4,7 +4,9 @@
 --blue: #81B3D2;
 --gray: #eeeeee;
             /*popap color*/
---brown:#766357;
+--light-brown:#766357;
+--brown:#604E43;
+--dark-brown:#503E33;
 --gray-popap: #f2f2f2;
 
             /*text color*/
@@ -14,6 +16,8 @@
 
             /*footer color*/
 --background-footer:rgba(255,255,255,0.9);
+--dark-blue: #669EC0;
+--darker-blue: #5496BD;
             /*hotel color*/
 --line-gray: #e5e5e5;
        /*color if the image didn't load*/
@@ -81,20 +85,6 @@ img{
     font-size:14px;
     line-height:26px;
 }
-            /*features*/
-    /* features back color
-.blue{
-    background-color:var(--blue);
-}
-.gray{
-    background-color:var(--gray);
-}
-.house,
-.eat,
-.souvenirs{
-    background-color:var(--white);
-}
-    */
 .features-list,
 .features-under-list{
     list-style:none;
@@ -168,11 +158,18 @@ color:var(--black-text);
     color:var(--black-text);
 }
 .interested a{
-    background-color:var(--brown);
+    background-color:var(--light-brown);
     color:var(--white);
     font-size: 21px;
     line-height: 26px;
 }
+.interested a:hover{
+    background-color:var(--brown);
+}
+.interested a:focus{
+    background-color:var(--dark-brown);
+    color:var(--white);
+    opacity: 0.3;}
 /*дальше тут должен быть попап, и по идее "поиск гостиницы" уже должен быть в нем*/
 .map{
     width:1200px;
@@ -202,4 +199,23 @@ color:var(--black-text);
     line-height: 26px;
 
 }
-
+    /*footer-social*/
+.social a{
+    background-color:var(--blue);
+}
+.social a:hover{
+    background-color:var(--dark-blue);
+}
+.social a:focus{
+    background-color:var(--darker-blue);
+}
+    /* footer-copiright*/
+.footer-copyright a{
+    background-image:url();
+}
+.footer-copyright a:hover{
+    background-image:url();
+}
+.footer-copyright a:focus{
+    background-image:url();
+}
