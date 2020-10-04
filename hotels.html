@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header" >
@@ -29,10 +32,10 @@
      <section>
      <h2>Фильтр</h2>
      </section>
-     <section>
+     <section class="filter">
       <p>Найдено: 3</p>
       <p>Сортировка:</p>
-      <ul>
+      <ul class="sorting">
         <li>
           <a>По цене</a>
         </li>
@@ -43,8 +46,12 @@
           <a href="#">По рейтингу</a>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="sorting-triangle">
+        <li>сортировка вверх</li>
+        <li>сортировка вниз</li>
+      </ul>
+      <ul class="content">
+        <li class="amara-resort-spa">
           <a href="#">
             <h3>Amara resort&#38;spa</h3>
             <p>Гостиницы</p>
@@ -56,7 +63,7 @@
           <img src="#" width="30px" height="30px" alt="Звёзды рейтинга">
           <p>Рейтинг: 8,5</p>
         </li>
-        <li>
+        <li class="desert-quali-inn">
           <a href="#">
             <h3>Desert quail inn</h3>
             <p>Мотель</p>
@@ -68,7 +75,7 @@
           <img src="#" width="30px" height="30px" alt="Звёзды рейтинга">
           <p>Рейтинг: 8,9</p>
         </li>
-        <li>
+        <li class="villas-at-poco-diablo">
           <a href="#">
             <h3>Villas at poco diablo</h3>
             <p>Апартаменты</p>

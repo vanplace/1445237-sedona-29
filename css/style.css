@@ -219,3 +219,15 @@ color:var(--black-text);
 .footer-copyright a:focus{
     background-image:url();
 }
+
+
+                    /* HOTEL  */
+            /*три тега, не придумал ничего другого*/
+.site-navigation li:nth-child(4) a{
+    color:var(--light-brown);
+}
+.filter{
+font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+}
