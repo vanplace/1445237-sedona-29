@@ -1,11 +1,11 @@
-:root{
+:root {
 --background-main: #f2f2f2;
 --white:#ffffff;
 --blue: #81B3D2;
 --gray: #eeeeee;
             /*popap color*/
 --light-brown:#766357;
---brown:#604E43;
+--brown: #604E43;
 --dark-brown:#503E33;
 --gray-popap: #f2f2f2;
 
@@ -27,10 +27,10 @@
 
             /* Global */
 
-body{
-    min-width:1280px;
+body {
+    min-width: 1280px;
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -40,35 +40,35 @@ body{
     background-color: var(--background-main)
 }
 
-.page a{
+.page a {
     text-decoration:none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
                 /* Main navigation*/
-.main-navigation{
+.main-navigation {
     font-size: 14px;
     line-height: 26px;
-    color:var(--black-text);
-    background-color:var(--white);
+    color: var(--black-text);
+    background-color: var(--white);
 }
-.site-navigation{
-    list-style:none;
+.site-navigation {
+    list-style: none;
 }
 
                 /*user navigarion */
-.site-navigation a{
-    color: var(--black-text);
+.site-navigation a {
+    color: var (--black-text);
 }
 
-.site-navigation a:hover{
-    color:var(--blue);
+.site-navigation a:hover {
+    color: var(--blue);
 }
-.site-navigation a:focus{
-    color:var(--black-text);
+.site-navigation a:focus { 
+    color: var(--black-text);
     opacity: 0.3;
 }
                 /*descrition*/
@@ -76,42 +76,42 @@ img{
 .description {
     text-align: center;
 }
-.discription b{
+.discription b {
     font-size:21px;
     line-height:26px;
     font-weight: bold;
 }
-.description p{
+.description p {
     font-size:14px;
     line-height:26px;
 }
 .features-list,
-.features-under-list{
+.features-under-list {
     list-style:none;
 }
-.blue{
+.blue {
     background-color:var(--blue);
 }
-.gray{
+.gray {
     background-color:var(--gray);
 }
-.features-item h3{
+.features-item h3 {
     font-size: 21px;
     line-height: 21px;
     text-align:center;
     font-weight:bold;
     color:var(--white);
 }
-.features-item p{
+.features-item p {
     font-size: 14px;
     line-height: 21px;
     text-align:center;
     color:var(--white); 
 }
-.blue img{
-    width:800px;
-    height:256px;
-    background-color:var(--PicDidntLoad);
+.blue img {
+    width: 800px;
+    height: 256px;
+    background-color: var(--PicDidntLoad);
 }
 
 .gray h3{
@@ -119,120 +119,135 @@ img{
     line-height: 21px;
     text-align:center;
     font-weight:bold;
-    color:var(--black-text);
+    color: var(--black-text);
 }
             /* Under list */
 .features-under-list {
     text-align: center; 
 }
-.features-under-list-item b{
+.features-under-list-item b {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    color:var(--black-text);
+    color: var(--black-text);
 }
 .features-under-list-item p {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    color:var(--light-black);
+    color: var(--light-black);
 }
 /* тут получилось три селектора*/
-.features-item + .gray p{
+.gray p {
     font-size: 14px;
     line-height: 21px;
-    color:var(--light-black);
+    color: var(--light-black);
 }
             /* interested */
-.interested{
+.interested {
     text-align: center;
 }
-.interested b{
+.interested b {
     font-size: 30px;
     line-height: 24px;
-color:var(--black-text);
+color: var(--black-text);
 }
-.interested p{
+.interested p {
     font-size: 14px;
     line-height: 24px;
-    color:var(--black-text);
+    color: var(--black-text);
 }
-.interested a{
-    background-color:var(--light-brown);
-    color:var(--white);
+.interested a {
+    background-color: var(--light-brown);
+    color: var(--white);
     font-size: 21px;
     line-height: 26px;
 }
-.interested a:hover{
-    background-color:var(--brown);
+.interested a:hover {
+    background-color: var(--brown);
 }
-.interested a:focus{
-    background-color:var(--dark-brown);
-    color:var(--white);
+.interested a:focus {
+    background-color: var(--dark-brown);
+    color: var(--white);
     opacity: 0.3;}
 /*дальше тут должен быть попап, и по идее "поиск гостиницы" уже должен быть в нем*/
-.map{
+.map {
     width:1200px;
     height:594px;
-    background-color:var(--PicDidntLoad);
+    background-color: var(--PicDidntLoad);
 }
             /* footer*/
-.footer{
-    background-color:var(--background-footer);
+.footer {
+    background-color: var(--background-footer);
     text-align:center;
     color: inherit;
     text-decoration:none;
 }
-.info{
+.info {
     font-size: 21px;
     line-height: 26px;
     font-weight:bold;
 }
-.info a{
+.info a {
     color:inherit;
 }
-.social li{ 
+.social li { 
     list-style-type:none;
 }
-.footer-copyright{
+.footer-copyright {
     font-size: 14px;
     line-height: 26px;
 
 }
     /*footer-social*/
-.social a{
-    background-color:var(--blue);
+.social a {
+    background-color: var(--blue);
 }
-.social a:hover{
-    background-color:var(--dark-blue);
+.social a:hover {
+    background-color: var(--dark-blue);
 }
-.social a:focus{
-    background-color:var(--darker-blue);
+.social a:focus {
+    background-color: var(--darker-blue);
 }
     /* footer-copiright*/
-.footer-copyright a{
-    background-image:url();
+.footer-copyright a {
+    background-image: url();
 }
 .footer-copyright a:hover{
-    background-image:url();
+    background-image: url();
 }
-.footer-copyright a:focus{
-    background-image:url();
+.footer-copyright a:focus {
+    background-image: url();
 }
 
 
                     /* HOTEL  */
             /*три тега, не придумал ничего другого*/
-.site-navigation li:nth-child(4) a{
-    color:var(--light-brown);
+.active{
+    color: var(--light-brown);
 }
 .filter{
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
 }
-.hotels-main p:nth-child(2){
+.sort-header {
     font-size: 12px;
     line-height: 18px;
-    color:red;
+    color: var(--black-text);
+}
+.sorting {
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none;
+    color: var(--black-text);
+    
+}
+.sorting a {
+    border-bottom: 1px dashed var(--black-text);
+
+}
+.sorting li:first-child {
+    color: var(--blue);
+    border-bottom: none;
 }
