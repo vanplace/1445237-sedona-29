@@ -243,12 +243,12 @@ color: var(--black-text);
     list-style: none;
     color: var(--black-text);   
 }
+
+.underline {
+    border-bottom: 1px  dashed var(--black-text);
+}
 .active-sorting {
     color: var(--blue);
-    border: none;
-}
-.sorting a {
-    border-bottom: 1px dashed var(--black-text);
 }
             /* change color of triangle */
 .sorting-triangle li{
@@ -264,6 +264,9 @@ color: var(--black-text);
     background-color: var(--blue);
 }
         /* content */
+.content{
+    background-color: var(--white);
+}
 .content li{
     list-style: none;    
 }
@@ -272,6 +275,51 @@ color: var(--black-text);
     line-height: 26px;
     color: var(--black-text);
 }
+.content h3:hover{
+    color: var(--blue);
+}
+.content h3:focus{
+    opacity: 0.3;
+}
 .content p {
-
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--light-black);
+    list-style: none;
+}
+.hotel-detals{
+    background-color: var(--blue);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    text-align: center;
+}
+.hotel-detals:hover{
+    background-color: var(--dark-blue);
+}
+.hotel-detals:focus{
+    background-color: var(--darker-blue);
+    opacity: 0.3;
+}
+.hotel-reservation{
+    background-color: var(--light-brown);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    text-align: center;
+}
+.hotel-reservation:hover{
+    background-color: var(--brown);
+}
+.hotel-reservation:focus{
+    background-color: var(--dark-brown);
+    opacity: 0.3;
+}
+.rating{
+    background-color: var(--gray-popap);
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--raiting-text-color);  
 }
