@@ -62,7 +62,7 @@ img {
 
                 /*user navigarion */
 .site-navigation a {
-    color: var (--black-text);
+    color: var(--black-text);
 }
 
 .site-navigation a:hover {
@@ -115,11 +115,7 @@ img {
     background-color: var(--PicDidntLoad);
 }
 
-.gray h3{
-    font-size: 21px;
-    line-height: 21px;
-    text-align:center;
-    font-weight:bold;
+.gray h3 {
     color: var(--black-text);
 }
             /* Under list */
@@ -138,7 +134,6 @@ img {
     text-align: center;
     color: var(--light-black);
 }
-/* тут получилось три селектора*/
 .gray p {
     font-size: 14px;
     line-height: 21px;
@@ -223,11 +218,10 @@ color: var(--black-text);
 
 
                     /* HOTEL  */
-            /*три тега, не придумал ничего другого*/
-.active{
+.active {
     color: var(--light-brown);
 }
-.filter{
+.filter {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -251,20 +245,20 @@ color: var(--black-text);
     color: var(--blue);
 }
             /* change color of triangle */
-.sorting-triangle li{
+.sorting-triangle li {
     background-color: var(--gray-triagle);
 }
-.sorting-triangle li:hover{
+.sorting-triangle li:hover {
     background-color: var(--black-text);
 }
-.sorting-triangle li:focus{
+.sorting-triangle li:focus {
     background-color: var(--blue);
 }
-.triangle-active{
+.triangle-active {
     background-color: var(--blue);
 }
         /* content */
-.content{
+.content {
     background-color: var(--white);
 }
 .content li{
@@ -275,10 +269,10 @@ color: var(--black-text);
     line-height: 26px;
     color: var(--black-text);
 }
-.content h3:hover{
+.content h3:hover {
     color: var(--blue);
 }
-.content h3:focus{
+.content h3:focus {
     opacity: 0.3;
 }
 .content p {
@@ -287,7 +281,7 @@ color: var(--black-text);
     color: var(--light-black);
     list-style: none;
 }
-.hotel-detals{
+.hotel-detals {
     background-color: var(--blue);
     font-weight: bold;
     font-size: 14px;
@@ -295,14 +289,14 @@ color: var(--black-text);
     color: var(--white);
     text-align: center;
 }
-.hotel-detals:hover{
+.hotel-detals:hover {
     background-color: var(--dark-blue);
 }
-.hotel-detals:focus{
+.hotel-detals:focus {
     background-color: var(--darker-blue);
     opacity: 0.3;
 }
-.hotel-reservation{
+.hotel-reservation {
     background-color: var(--light-brown);
     font-weight: bold;
     font-size: 14px;
@@ -310,14 +304,14 @@ color: var(--black-text);
     color: var(--white);
     text-align: center;
 }
-.hotel-reservation:hover{
+.hotel-reservation:hover {
     background-color: var(--brown);
 }
-.hotel-reservation:focus{
+.hotel-reservation:focus {
     background-color: var(--dark-brown);
     opacity: 0.3;
 }
-.rating{
+.rating {
     background-color: var(--gray-popap);
     font-size: 14px;
     line-height: 21px;
