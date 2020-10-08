@@ -3,6 +3,7 @@
 --white:#ffffff;
 --blue: #81B3D2;
 --gray: #eeeeee;
+--grai-triangle:#CACACA;
             /*popap color*/
 --light-brown:#766357;
 --brown: #604E43;
@@ -240,14 +241,37 @@ color: var(--black-text);
     font-size: 12px;
     line-height: 18px;
     list-style: none;
-    color: var(--black-text);
-    
+    color: var(--black-text);   
+}
+.active-sorting {
+    color: var(--blue);
+    border: none;
 }
 .sorting a {
     border-bottom: 1px dashed var(--black-text);
-
 }
-.sorting li:first-child {
-    color: var(--blue);
-    border-bottom: none;
+            /* change color of triangle */
+.sorting-triangle li{
+    background-color: var(--gray-triagle);
+}
+.sorting-triangle li:hover{
+    background-color: var(--black-text);
+}
+.sorting-triangle li:focus{
+    background-color: var(--blue);
+}
+.triangle-active{
+    background-color: var(--blue);
+}
+        /* content */
+.content li{
+    list-style: none;    
+}
+.content h3 {
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black-text);
+}
+.content p {
+
 }
