@@ -209,7 +209,7 @@ color: var(--black-text);
 .footer-copyright a {
     background-image: url();
 }
-.footer-copyright a:hover{
+.footer-copyright a:hover {
     background-image: url();
 }
 .footer-copyright a:focus {
@@ -239,7 +239,14 @@ color: var(--black-text);
 }
 
 .underline {
-    border-bottom: 1px  dashed var(--black-text);
+    border-bottom: 1px  dashed var(--blue);
+}
+.underline:hover {
+    color: var(--blue);
+}
+.underline:focus {
+    color: var(--black-text);
+    border-bottom: none;
 }
 .active-sorting {
     color: var(--blue);
@@ -248,10 +255,10 @@ color: var(--black-text);
 .sorting-triangle li {
     background-color: var(--gray-triagle);
 }
-.sorting-triangle li:hover {
+.not-active-triangle:hover {
     background-color: var(--black-text);
 }
-.sorting-triangle li:focus {
+.not-active-triangle:focus {
     background-color: var(--blue);
 }
 .triangle-active {
