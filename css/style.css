@@ -255,10 +255,10 @@ color: var(--black-text);
 .sorting-triangle li {
     background-color: var(--gray-triagle);
 }
-.not-active-triangle:hover {
+.not-active-triangle a:hover {
     background-color: var(--black-text);
 }
-.not-active-triangle:focus {
+.not-active-triangle a:focus {
     background-color: var(--blue);
 }
 .triangle-active {
@@ -268,7 +268,7 @@ color: var(--black-text);
 .content {
     background-color: var(--white);
 }
-.content li{
+.content li {
     list-style: none;    
 }
 .content h3 {
