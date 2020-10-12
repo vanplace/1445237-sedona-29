@@ -49,15 +49,62 @@ img {
     max-width: 100%;
     height: auto;
 }
+                /* Grid*/
+.page {
+    height: 100%;
+}
+.page-body {
+    min-height: 100%;
+    display:grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+                /*Main header*/
+.main-header {
+    width:1200px;
+    margin: 0 auto;
+}
+               
                 /* Main navigation*/
 .main-navigation {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 70px;
+
     font-size: 14px;
     line-height: 26px;
     color: var(--black-text);
     background-color: var(--white);
 }
 .site-navigation {
+    grid-column: -1/1;
+    grid-row: 1;
+
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+    /*first-screen*/
+.first-screen {
+    height: 509px;
+    background-image: url("../img/background photo.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+}
+                /*Container*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+                /*Logo*/
+ .nav-main-logo { 
+    order: 1;
+    justify-self: center;
+}
+.main-header-bar {
+background-color: var(--white);
+
 }
 
                 /*user navigarion */
@@ -65,10 +112,10 @@ img {
     color: var(--black-text);
 }
 
-.site-navigation a:hover {
+.work:hover {
     color: var(--blue);
 }
-.site-navigation a:focus { 
+.work:focus { 
     color: var(--black-text);
     opacity: 0.3;
 }
@@ -95,6 +142,27 @@ img {
 }
 .gray {
     background-color:var(--gray);
+}
+/* features*/
+.blue {
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: auto auto auto;
+outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+.blue h3 {
+    grid-column: 1;
+    grid-row:1;
+    padding:0;
+    margin:0;
+}
+.second {
+    grid-column:1;
+    grid-row:2;
+}
+.third {
+    grid-column:1;
+    grid-row:3;
 }
 .features-item h3 {
     font-size: 21px;
@@ -178,7 +246,10 @@ color: var(--black-text);
     text-align:center;
     color: inherit;
     text-decoration:none;
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
 }
+
 .info {
     font-size: 21px;
     line-height: 26px;
@@ -219,7 +290,7 @@ color: var(--black-text);
 
                     /* HOTEL  */
 .active {
-    color: var(--light-brown);
+    color: var(--blue) !important;
 }
 .filter {
     font-size: 21px;
