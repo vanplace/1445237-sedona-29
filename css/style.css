@@ -146,23 +146,37 @@ background-color: var(--white);
 /* features*/
 .blue {
 display: grid;
-grid-template-columns: 1fr 2fr;
+grid-template-columns: 400px auto;
 grid-template-rows: auto auto auto;
+grid-template-areas:
+"city img"
+"number img"
+"text img";
 outline: 5px solid rgba(255, 0, 0, 0.7);
+max-height: 256px;
 }
+
 .blue h3 {
-    grid-column: 1;
-    grid-row:1;
-    padding:0;
+    grid-area: city;
+    padding: 10px;
     margin:0;
+    
+    outline:1px solid green;
 }
 .second {
-    grid-column:1;
-    grid-row:2;
+    grid-area: number;
+    margin: 0;
+    outline:1px solid green;
 }
 .third {
-    grid-column:1;
-    grid-row:3;
+    grid-area: text;
+    margin: 0;
+    
+    outline:1px solid green;
+}
+.blue img {
+    grid-area: img;
+    margin: 0;
 }
 .features-item h3 {
     font-size: 21px;
