@@ -95,7 +95,7 @@ img {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+     padding: 0 40px;
 }
                 /*Logo*/
  .nav-main-logo { 
@@ -122,16 +122,27 @@ background-color: var(--white);
                 /*descrition*/
 
 .description {
+    display:flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
-.discription b {
+.description b {
+    margin: 0 auto;
+    width:470px;
+    height: 80px;
     font-size:21px;
     line-height:26px;
     font-weight: bold;
+   
+    padding-bottom: 16.5px;
 }
 .description p {
+    width: 519px;
+    margin: 0 auto;
     font-size:14px;
     line-height:26px;
+   
 }
 .features-list,
 .features-under-list {
@@ -144,48 +155,61 @@ background-color: var(--white);
     background-color:var(--gray);
 }
 /* features*/
-.blue {
-display: grid;
-grid-template-columns: 400px auto;
-grid-template-rows: auto auto auto;
-grid-template-areas:
-"city img"
-"number img"
-"text img";
-outline: 5px solid rgba(255, 0, 0, 0.7);
-max-height: 256px;
-}
 
-.blue h3 {
-    grid-area: city;
-    padding: 10px;
-    margin:0;
-    
-    outline:1px solid green;
+
+.features-list {
+    display: flex;
+    padding: 0 0;
+    margin: 0 0;
+    flex-direction: column;
+     
 }
-.second {
-    grid-area: number;
-    margin: 0;
-    outline:1px solid green;
+                    /*Смена местами картинок*/
+.left-picture {
+order:1;
+}
+.right-feature {
+    order: 2;
+}
+                    /*продолжение остального*/
+.features-item,
+.features-item1 {
+    display: flex;
+    justify-content: stretch;
+       
+}
+.flex-feature {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+    
+}
+.flex-feature-img {
+   
+    height:256px ;
+    width: 800px;
+}
+.flex-feature h3 {
+    width: 122px;
+    margin: 0 auto;
+    padding-top: 47px;
+    padding-bottom: 25px;
 }
 .third {
-    grid-area: text;
-    margin: 0;
-    
-    outline:1px solid green;
+    width: 297px;
+    margin: 0 auto; 
 }
-.blue img {
-    grid-area: img;
-    margin: 0;
-}
-.features-item h3 {
+.features-item h3,
+.features-item1 h3 {
     font-size: 21px;
     line-height: 21px;
     text-align:center;
     font-weight:bold;
     color:var(--white);
 }
-.features-item p {
+.features-item p,
+.features-item1 p {
     font-size: 14px;
     line-height: 21px;
     text-align:center;
@@ -199,18 +223,29 @@ max-height: 256px;
 
 .gray h3 {
     color: var(--black-text);
+    padding-top: 26px;
 }
             /* Under list */
 .features-under-list {
-    text-align: center; 
+    display: flex;
+    height: 330px;  /* с учетом расстояние для иконок*/
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin:0 0;
+    padding: 0 0;
+    background-color: var(--white);
+    
 }
 .features-under-list-item b {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
     color: var(--black-text);
+   
 }
 .features-under-list-item p {
+    width: 254px;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -221,6 +256,31 @@ max-height: 256px;
     line-height: 21px;
     color: var(--light-black);
 }
+    /* gray feature (последний блок преимуществ)*/
+.gray-feature {
+    display: flex;
+    justify-content: space-around;
+    margin:0 0;
+    padding: 0 0;
+    background-color: var(--gray);
+    }
+.gray-feature li {
+    height: 256px;
+   
+    align-items: center;
+}
+.gray {
+    display: flex;
+    flex-direction: column;
+    margin:0 0;
+    padding: 0 0;
+    
+}
+.gray p:nth-child(3) {
+    width: 207px;
+    padding-bottom: 26px;
+}
+
             /* interested */
 .interested {
     text-align: center;
