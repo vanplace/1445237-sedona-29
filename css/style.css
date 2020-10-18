@@ -58,6 +58,7 @@ img {
     display:grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
+    
 }
                 /*Main header*/
 .main-header {
@@ -385,16 +386,25 @@ color: var(--black-text);
     font-size: 12px;
     line-height: 18px;
     color: var(--black-text);
+    
 }
 .sorting {
     font-size: 12px;
     line-height: 18px;
     list-style: none;
-    color: var(--black-text);   
+    color: var(--black-text);
+    /*opacity: 0.3;*/   
 }
-
+.sorting a{
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none;
+    color: var(--black-text);
+    /*opacity: 0.3;*/   
+}
 .underline {
-    border-bottom: 1px  dashed var(--blue);
+    opacity: 0.3;
+    border-bottom: 1px  dotted var(--blue);
 }
 .underline:hover {
     color: var(--blue);
@@ -402,20 +412,30 @@ color: var(--black-text);
 .underline:focus {
     color: var(--black-text);
     border-bottom: none;
+    opacity: 1;
 }
 .active-sorting {
-    color: var(--blue);
+    color: var(--blue) !important;
+    
+    
 }
             /* change color of triangle */
 .sorting-triangle li {
     background-color: var(--gray-triagle);
 }
-.not-active-triangle a:hover {
-    background-color: var(--black-text);
+.not-active-triangle button:hover path {
+    fill: var(--black-text);
+  
 }
-.not-active-triangle a:focus {
-    background-color: var(--blue);
+.not-active-triangle button:focus path {
+    fill: var(--blue); 
 }
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
 .triangle-active {
     background-color: var(--blue);
 }
@@ -449,7 +469,11 @@ color: var(--black-text);
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
+    width: 110px;
+  padding: 3px 17px 3px;
+  box-sizing: border-box;
     text-align: center;
+ 
 }
 .hotel-detals:hover {
     background-color: var(--dark-blue);
@@ -464,6 +488,9 @@ color: var(--black-text);
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
+    width: 142px;
+    padding: 3px 16px 3px;
+    box-sizing: border-box;
     text-align: center;
 }
 .hotel-reservation:hover {
@@ -478,4 +505,119 @@ color: var(--black-text);
     font-size: 14px;
     line-height: 21px;
     color: var(--raiting-text-color);  
+    width: 110px;
+    padding: 3px 12px 3px 15px;
+    box-sizing: border-box;
+}
+
+
+            /* flex hotel*/
+
+        /* popap filter*/
+.popap-filter {
+    height: 217px;
+    background-image: url("../img/background-hotel.jpg");
+}
+
+
+        /* hotels main*/
+.flex-sort {
+    display: flex;
+    background-color: var(--white);
+    align-items: center;
+    border-bottom: 1px solid var(--line-gray);
+    height: 86px;
+    margin: 0 0;
+    padding: 0 0;
+}
+.filter {
+    margin: 0 0;   
+    margin-left: 73px;
+    width: 126px;
+}
+.sort-header {   
+    margin-left: 46px;   
+}
+.sorting {
+    display: flex;
+    margin: 0 0;
+    padding: 0 0 ;
+    justify-content: space-between;
+    margin-left: 40px;
+    width: 239px;
+}
+
+
+.sorting-triangle {
+    list-style: none;
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+    margin-right: 73px;
+    margin-left: 503px;
+}
+.not-active-triangle button {
+    border: none;
+}
+.triangle-active button {
+    border: none;
+}
+
+/* flex content*/
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0 0;    
+}
+.catalog-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 0;
+    height: 150px;
+    border-bottom: 1px solid var(--line-gray);
+}
+        /* hotel box*/
+.hotel-image {
+    
+    height: 90px;
+    width: 135px;
+    margin-left: 73px;
+
+    background-color: var(--gray); /*если не загрузится картинка*/
+}
+.price{
+    margin-left: 29px;
+   
+   
+}
+.price h3 {
+    margin: 0 0;
+}
+.detals{
+  
+}
+.rating-box {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 0;
+    padding: 0 0;
+    margin-left: 522px;
+    
+}
+.price-2 {
+display: flex;
+
+margin: 0 0;
+padding: 0 0;
+
+}
+.price-2 p:first-child{
+    width: 107px;
+    margin-right: 9px;
+    
+
 }
