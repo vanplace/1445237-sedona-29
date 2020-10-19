@@ -88,9 +88,11 @@ img {
     /*first-screen*/
 .first-screen {
     height: 509px;
-    background-image: url("../img/background photo.jpg");
+    background-image:url("../img/welcome.svg"),
+    url("../img/Shape.png"),
+     url("../img/background photo.jpg");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
 }
                 /*Container*/
 .container {
@@ -127,6 +129,7 @@ background-color: var(--white);
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    background-color: var(--white);
 }
 .description b {
     margin: 0 auto;
@@ -323,7 +326,6 @@ color: var(--black-text);
     margin: 0 auto;
     padding: 0 0;
     width: 1200px;
-    border: 1px solid green;
 }
 
 .footer {
@@ -343,23 +345,51 @@ color: var(--black-text);
 .info a {
     color:inherit;
 }
+.social {
+    margin-top: 36px;
+}
+.social ul{
+    display: flex;
+    margin: 0 0;
+    padding: 0;
+    
+    flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+}
+.social-button {
+  display: flex;
+  
+  
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--blue);
+  width: 46px;
+  height: 48px;
+}
 .social li { 
     list-style-type:none;
 }
+
+
 .footer-copyright {
     font-size: 14px;
     line-height: 26px;
+    margin: 0 0;
+   
+}
 
-}
-    /*footer-social*/
-.social a {
-    background-color: var(--blue);
-}
 .social a:hover {
     background-color: var(--dark-blue);
 }
 .social a:focus {
     background-color: var(--darker-blue);
+    
+}
+.social-button:focus path{
+fill-opacity: 0.3;
 }
     /* footer-copiright*/
 .footer-copyright a {
@@ -370,6 +400,20 @@ color: var(--black-text);
 }
 .footer-copyright a:focus {
     background-image: url();
+}
+.div-copyright {
+    display:flex;
+    width: 198px; 
+    align-items: center;
+    margin: 0 0;
+    padding:0 0;
+    justify-content: space-between;
+}
+.div-copyright a:hover path {
+    fill: var(--blue);
+}
+.div-copyright a:focus path {
+    fill-opacity: 0.3;
 }
 
 
@@ -558,9 +602,11 @@ button:focus {
 }
 .not-active-triangle button {
     border: none;
+    background-color: var(--white);
 }
 .triangle-active button {
     border: none;
+    background-color: var(--white);
 }
 
 /* flex content*/
@@ -596,9 +642,7 @@ button:focus {
 .price h3 {
     margin: 0 0;
 }
-.detals{
-  
-}
+
 .rating-box {
     display:flex;
     flex-direction: column;
