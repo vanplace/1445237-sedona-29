@@ -13,25 +13,102 @@
         <a href="index.html" class="nav-main-logo">
           <img  src="img/logo.png" width="138" height="70" alt="логотип">
         </a>
-        <ul class="site-navigation">
-          <li>
-            <a  class="work" href="#">Информация</a>
-          </li>
-          <li>
-            <a class="work" href="#">Фото и видео</a>
-          </li>
-          <li>
-            <a class="work" href="#">Карта штата</a></li>
-          <li>
-            <a class="active">Гостиницы</a>
+        <div class="main-header-bar">
+          <ul class="site-navigation">
+            <li>
+              <a  class="work" href="#">Информация</a>
             </li>
-        </ul>
+            <li>
+              <a class="work" href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a class="work" href="#">Карта штата</a></li>
+            <li>
+              <a class="active">Гостиницы</a>
+              </li>
+          </ul>
+        </div>
       </nav>         
         
     </header>
     <main class="hotel-page container">
      <section class="popap-filter">
-     <h2>Фильтр</h2>
+     <h2 class="visually-hidden">Фильтр</h2>
+      <div class="infrastructure">
+        <form class=" filter-main filter-infrastructure" method="GET">
+          <fieldset>
+            <legend>Инфрастуртура:</legend>
+              <ul>
+                <li class="filter-option filter-chexbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                  name="" checked>
+                  <label for="">бассейн </label>
+                </li>
+                <li class="filter-option filter-chexbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                  name="" checked>
+                  <label for="">парковка</label>
+                </li>
+                <li class="filter-option filter-chexbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                  name="" checked>
+                  <label for="">wi-fi</label>
+                </li>
+              </ul>
+          </fieldset>
+        </form>
+      </div>
+      <div class="type-of-housing">
+        <form class="filter-main filter-type-of-housing" method="GET">
+          <fieldset>
+            <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option filter-chexbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                  name="" checked>
+                  <label for="">Гостиница </label>
+                </li>
+                <li class="filter-option filter-chexbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                  name="" checked>
+                  <label for="">Мотель</label>
+                </li>
+                <li class="filter-option filter-chexbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                  name="" checked>
+                  <label for="">Апартаменты</label>
+                </li>
+              </ul>
+          </fieldset>
+        </form>
+      </div>
+      <div class="range">
+        <form method="GET" action="">
+          <fieldset class="filter-item">
+            <legend> Стоимость в сутки (р):</legend>
+              <div class="range-filter">
+                <div class="price-control">
+                  <label class="min-price">
+                     <input type="text" name="min-price" value="от 0">
+                  </label>
+                  <label class="max-price">
+                     <input type="text" name="max-price" value="до 3000">
+                  </label>
+                  </div>
+                <div class="range-control">
+                  <div class="scale">
+                    <div class="bar">
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0">
+                  </div>
+                  <div class="toggle toggle-max" tabindex="0">
+                  </div>
+                </div> 
+              </div>
+          </fieldset>
+        </form>
+      </div>
      </section>
      <section class="hotels-main">
       <div class="flex-sort">

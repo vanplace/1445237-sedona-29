@@ -9,6 +9,8 @@
 --brown: #604E43;
 --dark-brown:#503E33;
 --gray-popap: #f2f2f2;
+--gray-toggle: #ABABAB;
+--gray-toggle-opacity: rgba(171,171,171,0.3);
 
             /*text color*/
 --black-text: #000000;
@@ -174,7 +176,7 @@ background-color: var(--white);
 .site-navigation{
     display: flex;
     align-items: center;
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;
     justify-content: space-around;
     width: 1200px;
@@ -226,20 +228,12 @@ background-color: var(--white);
 .features-list {
     display: flex;
     padding: 0 0;
-    margin: 0 0;
+    margin: 0;
     flex-direction: column;
      
 }
-                    /*Смена местами картинок*/
-.left-picture {
-order:1;
-}
-.right-feature {
-    order: 2;
-}
-                    /*продолжение остального*/
-.features-item,
-.features-item1 {
+             
+.features-item {
     display: flex;
     justify-content: stretch;
        
@@ -247,15 +241,20 @@ order:1;
 .flex-feature {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    
-    
+    width: 400px;   
 }
-.flex-feature-img {
-   
+.flex-feature-img {  
     height:256px ;
     width: 800px;
 }
+       /*Смена местами картинок*/
+       .left-picture {
+        order:1;
+        }
+        .right-feature {
+            order: 2;
+        }
+                            /*продолжение остального*/
 .flex-feature h3 {
     width: 122px;
     margin: 0 auto;
@@ -298,7 +297,7 @@ order:1;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin:0 0;
+    margin:0;
     padding: 0 0;
     background-color: var(--white);
     
@@ -363,7 +362,7 @@ order:1;
 .gray-feature {
     display: flex;
     justify-content: space-around;
-    margin:0 0;
+    margin:0;
     padding: 0 0;
     background-color: var(--gray);
     }
@@ -375,7 +374,7 @@ order:1;
 .gray {
     display: flex;
     flex-direction: column;
-    margin:0 0;
+    margin:0;
     padding: 0 0;
     
 }
@@ -391,11 +390,11 @@ order:1;
     text-align: center;
     height: 291px;
     background-color: var(--white);
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;
     align-items: center;
     justify-content: space-between;
-   
+   position:relative;
 }
 .interested b {
     font-size: 30px;
@@ -409,7 +408,7 @@ order:1;
     font-size: 14px;
     line-height: 24px;
     color: var(--black-text);
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;
     margin-top: -30px;
 }
@@ -466,7 +465,7 @@ order:1;
 }
 .social ul{
     display: flex;
-    margin: 0 0;
+    margin: 0;
     padding: 0;
     
     flex-wrap: wrap;
@@ -493,7 +492,7 @@ order:1;
 .footer-copyright {
     font-size: 14px;
     line-height: 26px;
-    margin: 0 0;
+    margin: 0;
    
 }
 
@@ -521,7 +520,7 @@ fill-opacity: 0.3;
     display:flex;
     width: 198px; 
     align-items: center;
-    margin: 0 0;
+    margin: 0;
     padding:0 0;
     justify-content: space-between;
 }
@@ -537,7 +536,38 @@ fill-opacity: 0.3;
 .active {
     color: var(--blue) !important;
 }
-.filter {
+
+
+
+            /* filter-main*/
+.filter-main fieldset{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+
+}
+
+
+
+
+
+
+            .filter {      /* фильтр для сортировки*/
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -680,6 +710,91 @@ button:focus {
 }
 
 
+        /* range */
+.range {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+
+}
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 297px;
+    margin-top: 26.5px;
+}
+.range-control {
+    height: 40px;
+   /* background-color: greenyellow;
+    opacity: 0.5;*/
+    margin-bottom: 33px;
+    padding-top: 10px;
+    position: relative;
+}
+.range-control .scale {
+    height: 2px;
+    background: var(--white);
+    opacity: 0.3;
+}
+.range-control .bar {
+    width: 80%;
+    height: 2px;
+    background: white; /* какая-то хрень с цветами*/
+    opacity: 1;
+}
+.range-control .toggle {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 3.8px;
+    height: 3.8px;
+    padding: 0px;
+    border: 7.64px solid var(--white);
+    background-color: var(--gray-toggle);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: 0 2px 0px 0 var(--gray-toggle-opacity);
+}/*
+.range-control .toggle::before {
+    content: "";
+    position: absolute;
+    top: -5.1px;
+    left: -7.5px;
+    width:19px;
+    height: 19px;
+    background-color: var(--gray-toggle);
+    border-radius: 50%;
+    opacity: 0.3;
+    mix-blend-mode: normal;
+    z-index: -1;
+
+}*/
+.range-control .toggle-max {
+    top: -30px;
+    left: 233px;
+}
+
+.price-control input {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    width: 100px;
+  text-align: center;
+  color: #283136;
+  border: 2px solid var(--white);
+  
+  
+}
+
         /* hotels main*/
 .flex-sort {
     display: flex;
@@ -687,11 +802,11 @@ button:focus {
     align-items: center;
     border-bottom: 1px solid var(--line-gray);
     height: 86px;
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;
 }
 .filter {
-    margin: 0 0;   
+    margin: 0;   
     margin-left: 73px;
     width: 126px;
 }
@@ -700,7 +815,7 @@ button:focus {
 }
 .sorting {
     display: flex;
-    margin: 0 0;
+    margin: 0;
     padding: 0 0 ;
     justify-content: space-between;
     margin-left: 40px;
@@ -711,7 +826,7 @@ button:focus {
 .sorting-triangle {
     list-style: none;
     display: flex;
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;
     margin-right: 73px;
     margin-left: 503px;
@@ -730,13 +845,13 @@ button:focus {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;    
 }
 .catalog-item {
     display: flex;
     align-items: center;
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;
     height: 150px;
     border-bottom: 1px solid var(--line-gray);
@@ -756,14 +871,14 @@ button:focus {
    
 }
 .price h3 {
-    margin: 0 0;
+    margin: 0;
 }
 
 .rating-box {
     display:flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 0 0;
+    margin: 0;
     padding: 0 0;
     margin-left: 522px;
     
@@ -771,7 +886,7 @@ button:focus {
 .price-2 {
 display: flex;
 
-margin: 0 0;
+margin: 0;
 padding: 0 0;
 
 }
@@ -780,4 +895,22 @@ padding: 0 0;
     margin-right: 9px;
     
 
+}
+
+
+
+
+            /* modal window*/
+
+.modal {
+    display:flex;
+    position: absolute;
+    top:205px;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    outline: 1px solid red;
+    background-color:  yellow;
 }
