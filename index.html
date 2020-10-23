@@ -11,7 +11,7 @@
       <header class="main-header" >
         <nav class="main-navigation">
          <a class="nav-main-logo">
-            <img  src="img/logo.png" width="138" height="70" alt="логотип">
+            <img  src="img/logo.svg" width="138" height="70" alt="логотип">
           </a>
           <div class="main-header-bar">
             <ul class="site-navigation">
@@ -105,31 +105,33 @@
             и мы покажем вам лучшие предложения гостиниц в седоне.</p>
            <!-- <a href="hotels.html">Поиск гостиницы в седоне</a>-->
            <!-- modal window -->
-          <section class="modal">
+          <div class="modal">
             <div class="search-hotels">
               <h2>Поиск гостиницы в Седоне</h2>
             </div>
             <div class="input-field">
-              <p class="appointment-item">
+              <ul>
+              <li class="appointment-item">
                 <label for="appointment-date">Дата заезда:</label>
                 <input type="text" name="date" placeholder="24 апреля 2017">
-              </p>
-              <p class="appointment-item">
+              </li>
+              <li class="appointment-item">
                 <label for="appointment-date">Дата выезда:</label>
                 <input type="text" name="date" placeholder="4 июля 2017">
-              </p>
-              <p class="appointment-item">
+              </li>
+              <li class="appointment-item">
                 <label for="appointment-date">взрослые:</label>
-                <input type="text" name="date" placeholder="2">
-              </p>
-              <p class="appointment-item">
+                <input type="number" name="number" placeholder="2">
+              </li>
+              <li class="appointment-item">
                 <label for="appointment-date">Дети:</label>
-                <input type="text" name="date" placeholder="0">
-              </p>
+                <input type="number" name="number" placeholder="0">
+              </li>
+              </ul>
+              <button class="button" type="submi"> Найти</button> 
 
-              <button class="button" type="submi"> Найти</button>
             </div>
-          </section>
+          </div>
 
         </section>
         <section class="map">

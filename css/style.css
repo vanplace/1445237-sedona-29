@@ -11,6 +11,10 @@
 --gray-popap: #f2f2f2;
 --gray-toggle: #ABABAB;
 --gray-toggle-opacity: rgba(171,171,171,0.3);
+--gray-blocked-checkbox:#6A6A6A;
+--box-shadow-main:  rgba(0, 1, 1, 0.2);
+--box-shadow-modal: rgba(0, 1, 1, 0.15);
+
 
             /*text color*/
 --black-text: #000000;
@@ -82,7 +86,7 @@ img {
 .main-header {
     width:1200px;
     margin: 0 auto;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    box-shadow: 0px 5px 15px var(-box-shadow-main);
 }
                
                 /* Main navigation*/
@@ -111,7 +115,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    box-shadow: 0px 0px 15px rgba(255, 1, 1, 0.2);
+    box-shadow: 0px 0px 15px var(--box-shadow-main);
 }
 
 .first-screen::before {
@@ -191,7 +195,7 @@ background-color: var(--white);
     text-align: center;
     justify-content: center;
     background-color: var(--white);
-    box-shadow: 0px 5px 15px rgba(255, 1, 1, 0.2);
+    box-shadow: 0px 5px 15px var(--box-shadow-main);
 }
 .description b {
     margin: 0 auto;
@@ -222,7 +226,7 @@ background-color: var(--white);
 }
 /* features*/
 .features {
-    box-shadow: 0px 5px 15px rgba(255, 1, 1, 0.2);
+    box-shadow: 0px 5px 15px var(--box-shadow-main);
 }
 
 .features-list {
@@ -536,37 +540,6 @@ fill-opacity: 0.3;
 .active {
     color: var(--blue) !important;
 }
-
-
-
-            /* filter-main*/
-.filter-main fieldset{
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-.filter-option label {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    user-select: none;
-}
-.filter-input-checkbox + label::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 16px;
-    height: 16px;
-    border: 2px solid black;
-
-}
-
-
-
-
-
-
             .filter {      /* фильтр для сортировки*/
     font-size: 21px;
     line-height: 26px;
@@ -613,18 +586,14 @@ fill-opacity: 0.3;
 .sorting-triangle li {
     background-color: var(--gray-triagle);
 }
-.not-active-triangle button:hover path {
+.not-active-triangle a:hover path {
     fill: var(--black-text);
   
 }
-.not-active-triangle button:focus path {
-    fill: var(--blue); 
+.not-active-triangle a:active path {
+    fill:var(--blue); 
 }
-button, 
-button:active, 
-button:focus {
-    outline: none;
-}
+
 
 .triangle-active {
     background-color: var(--blue);
@@ -705,30 +674,96 @@ button:focus {
 
         /* popap filter*/
 .popap-filter {
-    height: 217px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    height: 217px;  /* убрать жесткую высоту элемента*/
     background-image: url("../img/background-hotel.jpg");
+}
+.infrastructure {
+    margin-left: 72px;
+  
+}
+.type-of-housing {
+    margin-left: 72px;
+   
+}
+.range{
+    margin-left: 348px;
+    
+}
+.filter-option label {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    margin-bottom: 23px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+} 
+
+
+  /* filter-main*/
+  .filter-main fieldset{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.filter-option {
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.no-check + label::before {         /* класс no-check  чтобы нормально отобразить не выбранные квадратики, а должен быть .filter-input-checkbox*/
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 0px;
+    width: 23px;
+    height: 23px;
+    background: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.filter-input-checkbox:checked + label::after {
+    content:"";
+    position: absolute;
+    left: -37px;
+    top: 0px;
+    width: 27px;
+    height: 23px;
+    background: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
         /* range */
 .range {
-    margin: 0;
+  /*  margin: 347px;*/
     padding: 0;
-
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--white);
+    
 
 }
 .filter-item {
     margin: 0;
     padding: 0;
     border: none;
-    width: 297px;
+    width: 135px;
     margin-top: 26.5px;
+}
+.filter-item legend {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
 }
 .range-control {
     height: 40px;
@@ -746,7 +781,7 @@ button:focus {
 .range-control .bar {
     width: 80%;
     height: 2px;
-    background: white; /* какая-то хрень с цветами*/
+    background: var(--white); /* прозрачность не хочет уходить*/
     opacity: 1;
 }
 .range-control .toggle {
@@ -763,36 +798,63 @@ button:focus {
     z-index: 2;
     cursor: pointer;
     box-shadow: 0 2px 0px 0 var(--gray-toggle-opacity);
-}/*
-.range-control .toggle::before {
-    content: "";
-    position: absolute;
-    top: -5.1px;
-    left: -7.5px;
-    width:19px;
-    height: 19px;
-    background-color: var(--gray-toggle);
-    border-radius: 50%;
-    opacity: 0.3;
-    mix-blend-mode: normal;
-    z-index: -1;
-
-}*/
+}
 .range-control .toggle-max {
     top: -30px;
     left: 233px;
+}
+.toggle:hover {
+    transform: scale(1.2 , 1.2)
 }
 
 .price-control input {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
-    width: 100px;
+    width: 150px;
   text-align: center;
-  color: #283136;
-  border: 2px solid var(--white);
-  
-  
+  color: var(--white);
+  border:none;
+  background: none;
+}
+/* разделительная палочка  на стоимости, надо придумать отступы сверху и снизу*/
+.min-price {
+    border-right: 2px solid var(--white);    
+}
+
+.price-control {
+    margin-bottom: 11px;
+    margin-top: 10px;
+    border: 2px solid var(--white);
+    width:317px;
+}
+.range{
+    display:flex;
+    flex-direction: column;
+   /* margin: 0;*/
+    padding:0;
+    align-items: center;
+}
+.range form{
+    height:145px;
+}
+.look-button {
+    border: 2px solid var(--white);
+    width: 137px;
+    height: 36px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding: 0;
+}
+.look-button a{
+    
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    
 }
 
         /* hotels main*/
@@ -821,8 +883,6 @@ button:focus {
     margin-left: 40px;
     width: 239px;
 }
-
-
 .sorting-triangle {
     list-style: none;
     display: flex;
@@ -831,15 +891,6 @@ button:focus {
     margin-right: 73px;
     margin-left: 503px;
 }
-.not-active-triangle button {
-    border: none;
-    background-color: var(--white);
-}
-.triangle-active button {
-    border: none;
-    background-color: var(--white);
-}
-
 /* flex content*/
 .content {
     display: flex;
@@ -901,16 +952,44 @@ padding: 0 0;
 
 
             /* modal window*/
+            
+.container {
+    position: relative;
+
+}
 
 .modal {
     display:flex;
     position: absolute;
-    top:205px;
+    flex-direction: column;
+    justify-content: center;
+   /* align-items: center;*/
+    top:600px;
     right: 0;
     bottom:0;
     left: 0;
     margin: auto;
-    z-index: 1;
-    outline: 1px solid red;
-    background-color:  yellow;
+    background: var(--white);
+    width: 586px;
+    height:481px;
+    box-shadow: 0px 7px 15px var(--box-shadow-modal);
+}
+.search-hotels {
+    
+    background: var(--light-brown);
+    color: var(--white);
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    height: 86px;
+}
+.input-field {
+    height:395px;
+    display: flex;
+   flex-direction: column;
+   
+   
+}
+.input-field ul{
+    list-style: none;
 }
