@@ -21,6 +21,7 @@
 --black-text: #000000;
 --light-black: #333333;
 --raiting-text-color: #666666;
+--white-opacity: rgba(255,255,255,0.3);
 
             /*footer color*/
 --background-footer:rgba(255,255,255,0.9);
@@ -419,18 +420,19 @@ background-color: var(--white);
     margin-top: -30px;
 }
 .interested a {
-    background-color: var(--light-brown);
+    background-color: var(--blue);
     color: var(--white);
     font-size: 21px;
     line-height: 26px;
 }
 .interested a:hover {
-    background-color: var(--brown);
+    background-color: var(--dark-blue);
 }
-.interested a:focus {
-    background-color: var(--dark-brown);
-    color: var(--white);
-    opacity: 0.3;}
+.interested a:active {
+    background-color: var(--darker-blue);
+    color: var(--white-opacity);
+    }
+
 /*дальше тут должен быть попап, и по идее "поиск гостиницы" уже должен быть в нем*/
 .map {
     width:1200px;
@@ -944,8 +946,6 @@ padding: 0;
 .price-2 p:first-child{
     width: 107px;
     margin-right: 9px;
-    
-
 }
 
 
@@ -955,7 +955,6 @@ padding: 0;
             
 .container {
     position: relative;
-
 }
 
 .modal {
@@ -987,11 +986,15 @@ padding: 0;
     height:395px;
     display: flex;
    flex-direction: column;
-   
+  /* width: 38px;*/
+    background-color: var(--background-main);
    
 }
 .input-field ul{
     list-style: none;
+}
+.input-field li:first-child {
+    margin-top: 55px;
 }
 .appointment-item {
     display:flex;
@@ -1004,13 +1007,30 @@ padding: 0;
 
 .people {
     display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.people input{
+    width: 36px;
+    border: none;
 }
 
 .search-button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     width: 458px;
     height: 58px;
     background-color: var(--blue);
-
+    
+}
+.residence-time input {
+    width: 100px;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
