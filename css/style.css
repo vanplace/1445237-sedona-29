@@ -14,6 +14,8 @@
 --gray-blocked-checkbox:#6A6A6A;
 --box-shadow-main:  rgba(0, 1, 1, 0.2);
 --box-shadow-modal: rgba(0, 1, 1, 0.15);
+--minus-back: #A9A9A9;
+--gray-after-hover: #EBEBEB;
             /*range color*/
 --range-opacity: rgba(255,255,255,0.3);
 
@@ -417,7 +419,8 @@ background-color: var(--white);
     color: var(--black-text);
     margin: 0;
     padding: 0;
-    margin-top: -30px;
+    margin-bottom: 140px
+  
 }
 .interested a {
     background-color: var(--blue);
@@ -962,10 +965,8 @@ padding: 0;
     position: absolute;
     flex-direction: column;
     justify-content: center;
-   /* align-items: center;*/
-    top:600px;
+    top:210px;
     right: 0;
-    bottom:0;
     left: 0;
     margin: auto;
     background: var(--white);
@@ -981,35 +982,43 @@ padding: 0;
     font-size: 21px;
     line-height: 26px;
     height: 86px;
+    margin-bottom: 26px;
 }
 .input-field {
     height:395px;
     display: flex;
    flex-direction: column;
   /* width: 38px;*/
-    background-color: var(--background-main);
+  
    
 }
 .input-field ul{
     list-style: none;
 }
-.input-field li:first-child {
+/*.input-field li:first-child {
     margin-top: 55px;
-}
+}*/
 .appointment-item {
     display:flex;
     align-items: center;
     margin: 0;
     padding: 0;
     height: 38px;
-    outline: 1px solid red;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 29px;
 }
 
 .people {
     display: flex;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+   
+}
+.people li:first-child {
+    margin-right: 33px;
 }
 .people input{
     width: 36px;
@@ -1020,17 +1029,83 @@ padding: 0;
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 458px;
     height: 58px;
     background-color: var(--blue);
+    margin-top: 54px;
     
 }
 .residence-time input {
-    width: 100px;
     -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+     background-color: inherit;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: inherit;
+}
+.residence-time svg {
+    margin-left: 30px;
+}
+.appointment-item label {
+    margin-right: 30px;
+}
+.people-1 label {
+    margin-right: 50px;
+}
+
+.input-back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-main);
+    height: 38px;
+    width: 346px;
+    padding: 0 9px;
+}
+
+.input-back:hover {
+background-color: var(--gray-after-hover);
+}
+.input-back:active {
+    background-color: var(--white);
+    border: 2px solid var(--line-gray);
+}
+.input-back-people {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-main);
+    height: 38px;
+    width: 114px;
+    padding: 0 9px;
+}
+
+.input-back-people input {
+    background-color: var(--background-main);
+}
+.people-1 {
+    margin-right: 50px;
+}
+.appointment-item svg:hover path {
+    fill: var(--blue);
+}
+.appointment-item svg:active path {
+    fill: var(--black-text);
+}
+.minus {
+    height: 3px;
+    width: 10px;
+    background-color: var(--minus-back) ;
+}
+.minus:hover  {
+    background-color: var(--blue);
+}
+.minus:active  {
+    background-color: var(--black-text);
 }
