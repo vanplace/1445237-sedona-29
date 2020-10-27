@@ -22,6 +22,7 @@
 
             /*text color*/
 --black-text: #000000;
+--black-text-opacity: rgba(0,0,0,0.3);
 --light-black: #333333;
 --raiting-text-color: #666666;
 --white-opacity: rgba(255,255,255,0.3);
@@ -169,8 +170,10 @@ background-color: var(--white);
     color: var(--blue);
 }
 .work:focus { 
-    color: var(--black-text);
-    opacity: 0.3;
+   color:var(--light-brown);
+}
+.work:active {
+   color: var(--black-text-opacity);
 }
 .main-navigation {
     display: flex;
@@ -283,12 +286,12 @@ background-color: var(--white);
     font-weight:bold;
     color:var(--white);
 }
-.features-item p,
-.features-item1 p {
+.features-item p {
     font-size: 14px;
     line-height: 21px;
     text-align:center;
-    color:var(--white); 
+    color:var(--white);
+    margin: 0; 
 }
 .blue img {
     width: 800px;
@@ -462,7 +465,8 @@ background-color: var(--white);
     text-decoration:none;
     outline-offset: -5px;
     width: 1200px;
-    margin:0 auto;
+    margin:-120px auto;
+    z-index: 1;
     
    
 }
@@ -690,7 +694,7 @@ fill-opacity: 0.3;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    height: 217px;  /* убрать жесткую высоту элемента*/
+    /*height: 217px;*/  /* убрать жесткую высоту элемента*/
     background-image: url("../img/background-hotel.jpg");
 }
 .infrastructure {
@@ -790,8 +794,8 @@ fill-opacity: 0.3;
 .range-control .bar {
     width: 80%;
     height: 2px;
-    background: var(--white); /* прозрачность не хочет уходить*/
-    opacity: 1;
+    background: var(--white); 
+   
 }
 .range-control .toggle {
     position: absolute;
@@ -847,7 +851,7 @@ fill-opacity: 0.3;
 .range form{
     height:145px;
 }
-.look-button {
+.look-button a {
     border: 2px solid var(--white);
     width: 137px;
     height: 36px;
@@ -857,23 +861,17 @@ fill-opacity: 0.3;
     align-items: center;
     margin:0;
     padding: 0;
-}
-.look-button a{
-    
     font-size: 14px;
     line-height: 21px;
     color: var(--white);  
 }
-.look-button:hover{
+    
+   
+.look-button a:hover{
     color: var(--black-text);
     background-color: var(--white);
     
-}/*
-.look-button a:hover {
-    background-color: var(--white);
-    color: var(--black-text);
-}*/
-
+}
 
         /* hotels main*/
 .flex-sort {
@@ -910,12 +908,23 @@ fill-opacity: 0.3;
     margin-left: 503px;
 }
 /* flex content*/
-.content {
+/*.content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;    
+}*/
+    /*grid content*/
+.content {
+    display: grid;
+    grid-template-columns: 1200px;
+    outline: 1px solid red;
+    margin:0;
+    padding: 0;
+
+
+
 }
 .catalog-item {
     display: flex;
