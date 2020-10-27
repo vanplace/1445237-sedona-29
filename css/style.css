@@ -1,6 +1,7 @@
 :root {
 --background-main: #f2f2f2;
 --white:#ffffff;
+--white-opacity:rgba(255,255,255,0.3);
 --blue: #81B3D2;
 --gray: #eeeeee;
 --grai-triangle:#CACACA;
@@ -623,7 +624,7 @@ fill-opacity: 0.3;
 .content h3:hover {
     color: var(--blue);
 }
-.content h3:focus {
+.content h3:active {
     opacity: 0.3;
 }
 .content p {
@@ -647,9 +648,9 @@ fill-opacity: 0.3;
 .hotel-detals:hover {
     background-color: var(--dark-blue);
 }
-.hotel-detals:focus {
+.hotel-detals:active {
     background-color: var(--darker-blue);
-    opacity: 0.3;
+    color: var(--white-opacity);
 }
 .hotel-reservation {
     background-color: var(--light-brown);
@@ -667,7 +668,7 @@ fill-opacity: 0.3;
 }
 .hotel-reservation:focus {
     background-color: var(--dark-brown);
-    opacity: 0.3;
+    color: var(--white-opacity);
 }
 .rating {
     background-color: var(--gray-popap);
@@ -861,9 +862,18 @@ fill-opacity: 0.3;
     
     font-size: 14px;
     line-height: 21px;
-    color: var(--white);
-    
+    color: var(--white);  
 }
+.look-button:hover{
+    color: var(--black-text);
+    background-color: var(--white);
+    
+}/*
+.look-button a:hover {
+    background-color: var(--white);
+    color: var(--black-text);
+}*/
+
 
         /* hotels main*/
 .flex-sort {
@@ -997,6 +1007,13 @@ padding: 0;
     height: 86px;
     margin: 0;
     padding: 0;
+}
+.search-hotels h2:hover {
+    background-color: var(--brown);
+}
+.search-hotels h2:active {
+    background-color: var(--dark-brown);
+    color: var(--white-opacity);
 }
 .input-field {
     height:395px;
