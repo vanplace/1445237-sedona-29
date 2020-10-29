@@ -97,22 +97,76 @@ img {
                
                 /* Main navigation*/
 .main-navigation {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 70px;
     font-size: 14px;
     line-height: 26px;
     color: var(--black-text);
     background-color: var(--white);
-}
-.site-navigation {
-    grid-column: -1/1;
-    grid-row: 1;
-
     margin: 0;
     padding: 0;
+    
+}
+.site-navigation {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 1200px; 
     list-style: none;
 }
+.site-navigation a {
+    color: var(--black-text);
+    font-weight: bold;
+   display: block; 
+    margin: 14px 0 16px ;
+}
+.site-navigation li {
+    display: flex;
+    justify-content: center;
+    width: 229px;
+}
+.main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.nav-main-logo {
+    position: absolute;
+    transform:translateX(-50%);
+    left: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.f1 {
+    display: flex;
+    justify-content: center;
+    
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+}
+.f2 {
+    display: flex;
+    justify-content: flex-end;
+    
+    margin: 0;
+    padding: 0;
+}
+ /*user navigarion */
+ 
+
+.work:hover {
+    color: var(--blue);
+}
+.work:focus { 
+   color:var(--light-brown);
+}
+.work:active {
+   color: var(--black-text-opacity);
+}
+
     /*first-screen*/
 .first-screen {
     height: 509px;
@@ -158,46 +212,7 @@ background-color: var(--white);
 
 }
 
-                /*user navigarion */
-.site-navigation a {
-    color: var(--black-text);
-    font-weight: bold;
-    display: block;
-    margin: 15px 0;
-}
-
-.work:hover {
-    color: var(--blue);
-}
-.work:focus { 
-   color:var(--light-brown);
-}
-.work:active {
-   color: var(--black-text-opacity);
-}
-.main-navigation {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-.nav-main-logo {
-    position: absolute;
-    transform:translateX(-50%);
-    left: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
-.site-navigation{
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    justify-content: space-around;
-    width: 1200px;
-    
-}
+               
 
                 /*descrition*/
 
