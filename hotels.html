@@ -33,10 +33,10 @@
     </header>
     <main class="hotel-page container">
      <section class="popap-filter">
-     <h2 class="visually-hidden">Фильтр</h2>
-      <div class="infrastructure">
-        <form class=" filter-main filter-infrastructure" method="GET">
-          <fieldset class="filter-item">
+       <h2 class="visually-hidden">Фильтр</h2>
+      <form class="form-second-page" > 
+        <!-- <div class="infrastructure"> -->
+          <fieldset class="filter-item filter-main filter-infrastructure infrastructure">
             <legend>Инфрастуртура:</legend>
               <ul>
                 <li class="filter-option filter-chexbox">
@@ -56,11 +56,9 @@
                 </li>
               </ul>
           </fieldset>
-        </form>
-      </div>
-      <div class="type-of-housing">
-        <form class="filter-main filter-type-of-housing" method="get">
-          <fieldset class="filter-item">
+     <!--  </div>   
+          <div class="type-of-housing">   -->  
+          <fieldset class="filter-item filter-main filter-type-of-housing type-of-housing">
             <legend>Тип жилья:</legend>
               <ul>
                 <li class="filter-option filter-chexbox">
@@ -80,11 +78,9 @@
                 </li>
               </ul>
           </fieldset>
-        </form>
-      </div>
-      <div class="range">
-        <form method="GET" action="">
-          <fieldset class="filter-item">
+     <!-- </div> 
+      <div class="range">  -->
+          <fieldset class="filter-item range">
             <legend> Стоимость в сутки (р):</legend>
               <div class="range-filter">
                 <div class="price-control">
@@ -106,12 +102,15 @@
                   </div>
                 </div> 
               </div>
+              <div class="look-button">
+                <a href="https://echo.htmlacademy.ru/">Показать</a>
+              </div>
           </fieldset>
-        </form>
-        <div class="look-button">
+        <!--<div class="look-button">
           <a href="https://echo.htmlacademy.ru/">Показать</a>
-        </div>
-      </div>
+        </div>-->
+      <!--</div>-->
+    </form>
      </section>
      <section class="hotels-main">
       <div class="flex-sort">

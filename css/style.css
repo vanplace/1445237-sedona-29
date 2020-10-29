@@ -327,12 +327,17 @@ background-color: var(--white);
     color: var(--black-text);
     display: inline-block;
     outline: 1px solid red;
+    margin-top: 82px;
+    margin-bottom: 20px;
     
+}
+.features-under-list-item p {
+    margin: 0;
 }
 .house b::before {
     content:"";
     position:absolute;
-    top: -57px;
+    top: -17px;
     left:90px;
     width: 74.69px;
     height: 72px;
@@ -343,7 +348,7 @@ background-color: var(--white);
 .eat b::before {
     content:"";
     position:absolute;
-    top: -57px;
+    top: -17px;
     left:90px;
     width: 74.69px;
     height: 70px;
@@ -354,7 +359,7 @@ background-color: var(--white);
 .souvenirs b::before {
     content:"";
     position:absolute;
-    top: -63px;
+    top: -17px;
     left:95px;
     width: 74.69px;
     height: 77px;
@@ -695,7 +700,7 @@ fill-opacity: 0.3;
             /* flex hotel*/
 
         /* popap filter*/
-.popap-filter {
+.form-second-page {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
