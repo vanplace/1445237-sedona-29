@@ -286,10 +286,21 @@ background-color: var(--white);
 }
                             /*продолжение остального*/
 .flex-feature h3 {
-    width: 122px;
+    width: 155px;
     margin: 0 auto;
-    padding-top: 47px;
+    padding-top: 49px;
     padding-bottom: 25px;
+}
+.right-feature p {
+    margin-top: 2px;
+    margin-left: 43px;
+    margin-bottom: 21px;
+    width: 315px;
+}
+.red {
+    display: inline-block;
+    margin-top:10px;
+    
 }
 .second {
     margin-top: 0;
@@ -322,7 +333,9 @@ background-color: var(--white);
 
 .gray h3 {
     color: var(--black-text);
-    padding-top: 26px;
+    margin-top: 38px;
+    margin-bottom: 0;
+    
 }
             /* Under list */
 .features-under-list {
@@ -342,19 +355,19 @@ background-color: var(--white);
     font-weight: bold;
     color: var(--black-text);
     display: inline-block;
-    outline: 1px solid red;
-    margin-top: 82px;
-    margin-bottom: 20px;
+    margin-top: 76px;
+    margin-bottom: 26px;
     
 }
 .features-under-list-item p {
     margin: 0;
 }
+
 .house b::before {
     content:"";
     position:absolute;
-    top: -17px;
-    left:90px;
+    top: -22px;
+    left:105px;
     width: 74.69px;
     height: 72px;
     background-image: url("../img/icon-1.svg");
@@ -364,8 +377,8 @@ background-color: var(--white);
 .eat b::before {
     content:"";
     position:absolute;
-    top: -17px;
-    left:90px;
+    top: -22px;
+    left:105px;
     width: 74.69px;
     height: 70px;
     background-image: url("../img/icon-3.svg");
@@ -375,8 +388,8 @@ background-color: var(--white);
 .souvenirs b::before {
     content:"";
     position:absolute;
-    top: -17px;
-    left:95px;
+    top: -28px;
+    left:110px;
     width: 74.69px;
     height: 77px;
     background-image: url("../img/icon-2.svg");
@@ -388,7 +401,7 @@ background-color: var(--white);
     position: relative;
 }
 .features-under-list-item p {
-    width: 254px;
+    width: 285px;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -398,32 +411,45 @@ background-color: var(--white);
     font-size: 14px;
     line-height: 21px;
     color: var(--light-black);
+    padding: 0;
+    margin:0;
+}
+.gray p:last-child {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 45px;
+    width: 280px;
 }
     /* gray feature (последний блок преимуществ)*/
 .gray-feature {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin:0;
     padding: 0;
     background-color: var(--gray);
+    
     }
 .gray-feature li {
     height: 256px;
-   
+    
     align-items: center;
 }
 .gray {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     margin:0;
     padding: 0;
+    width: 400px;
     
 }
-.gray p:nth-child(3) {
-    width: 207px;
-    padding-bottom: 26px;
-}
 
+.gray-feature h3 {
+    width: 150px;
+}
             /* interested */
 .interested {
     display: flex;
@@ -451,7 +477,7 @@ background-color: var(--white);
     color: var(--black-text);
     margin: 0;
     padding: 0;
-    margin-bottom: 140px
+    margin-bottom: 130px
   
 }
 .interested a {
@@ -1017,7 +1043,7 @@ padding: 0;
     left: 0;
     margin: auto;
     background: var(--white);
-    width: 586px;
+    width: 568px;
     height:481px;
     box-shadow: 0px 7px 15px var(--box-shadow-modal);
 }
@@ -1070,7 +1096,8 @@ padding: 0;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
-    margin-top: 29px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .people {
@@ -1116,7 +1143,7 @@ padding: 0;
     margin-left: 30px;
 }
 .appointment-item label {
-    margin-right: 30px;
+    margin-right: 15px;
 }
 .people-1 label {
     margin-right: 50px;
