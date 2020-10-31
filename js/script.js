@@ -10,4 +10,5 @@ ModalToClosen.addEventListener("click", function(evt){
 ModalToOpen.addEventListener("click", function(evt){
     evt.preventDefault();
     Modal.classList.remove("modal-none");
+    Modal.classList.add("modal-animation");
 })
