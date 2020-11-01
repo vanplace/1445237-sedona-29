@@ -51,9 +51,7 @@ body {
     color: var(--black-text);
     text-transform: uppercase;
     background-color: var(--background-main);
-    
 }
-
 .page a {
     text-decoration:none;
 }
@@ -77,16 +75,12 @@ img {
                 /* Grid*/
 .page {
     height: 100%;
-    
 }
 .page-body {
     min-height: 100%;
     display:grid;
     grid-template-rows: min-content 1fr min-content;
-    align-content: start;
-    
-    
-    
+    align-content: start; 
 }
                 /*Main header*/
 .main-header {
@@ -123,14 +117,11 @@ img {
 }
 .site-navigation li {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 229px;
 }
 .main-navigation {
-  /*  display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;*/
     position: relative;
 }
 .nav-main-logo {
@@ -140,27 +131,26 @@ img {
     margin: 0 auto;
     text-align: center;
 }
-.f1 {
+.left-part-navigation {
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
     margin: 0;
     margin-left: 5px;
     padding: 0;
 }
-.f2 {
+.right-part-navigation {
     display: flex;
     justify-content: flex-end;
-    
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
-.f2 a {
+.right-part-navigation a {
     margin-left: 5px;
 }
  /*user navigarion */
  
-
 .work:hover {
     color: var(--blue);
 }
@@ -170,18 +160,16 @@ img {
 .work:active {
    color: var(--black-text-opacity);
 }
-
     /*first-screen*/
 .first-screen {
     height: 509px;
     background-image:url("../img/welcome.svg"),
-     url("../img/background photo.jpg");
+     url("../img/background-photo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
      /*box-shadow: 0px 5px 15px var(--box-shadow-main);*/
 }
-
 .first-screen::before {
     content:"";
     position:absolute;
@@ -191,19 +179,13 @@ img {
     height: 57px;
     background-image: url("../img/Shape.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    
-}
-    
+    background-position: 0 0;    
+}    
                 /*Container*/
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
-    /* padding: 0 40px;*/
-    
-     ;
-     
 }
                 /*Logo*/
  .nav-main-logo { 
@@ -213,11 +195,7 @@ img {
 }
 .main-header-bar {
 background-color: var(--white);
-
 }
-
-               
-
                 /*descrition*/
 
 .description {
@@ -256,22 +234,22 @@ background-color: var(--white);
 }
 /* features*/
 
-
 .features-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    flex-direction: column;
-     
-}
-             
+    flex-direction: column;  
+}        
 .features-item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: stretch;
        
 }
 .flex-feature {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 400px;
     margin: 0;   
@@ -303,7 +281,6 @@ background-color: var(--white);
 .red {
     display: inline-block;
     margin-top:10px;
-    
 }
 .second {
     margin-top: 0;
@@ -326,31 +303,31 @@ background-color: var(--white);
     line-height: 21px;
     text-align:center;
     color:var(--white);
-    
 }
 .blue img {
     width: 800px;
     height: 256px;
     background-color: var(--PicDidntLoad);
 }
-
 .gray h3 {
     color: var(--black-text);
     margin-top: 35px;
     margin-bottom: 3px;
-    
 }
             /* Under list */
 .features-under-list {
     display: flex;
-    height: 330px;  /* с учетом расстояние для иконок*/
+    flex-wrap: wrap;
+   /* height: 330px;  /* с учетом расстояние для иконок*/
     justify-content: space-around;
     align-items: center;
     text-align: center;
     margin:0;
     padding: 0;
-    background-color: var(--white);
-    
+    background-color: var(--white); 
+}
+.features-under-list li {
+    height: 330px;
 }
 .features-under-list-item b {
     font-size: 21px;
@@ -358,18 +335,16 @@ background-color: var(--white);
     font-weight: bold;
     color: var(--black-text);
     display: inline-block;
-    margin-top: 76px;
-    margin-bottom: 26px;
-    
+    margin-top: 162px;
+    margin-bottom: 26px; 
 }
 .features-under-list-item p {
     margin: 0;
 }
-
 .house b::before {
     content:"";
     position:absolute;
-    top: -22px;
+    top: 63px;
     left:105px;
     width: 74.69px;
     height: 72px;
@@ -380,7 +355,7 @@ background-color: var(--white);
 .eat b::before {
     content:"";
     position:absolute;
-    top: -22px;
+    top: 63px;
     left:105px;
     width: 74.69px;
     height: 70px;
@@ -391,10 +366,10 @@ background-color: var(--white);
 .souvenirs b::before {
     content:"";
     position:absolute;
-    top: -28px;
+    top: 57px;
     left:110px;
     width: 74.69px;
-    height: 11px;
+    height: 77px;
     background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
     background-position: 0 0;}
@@ -423,9 +398,6 @@ background-color: var(--white);
     margin-bottom: 43px;
     width: 270px;
 }
-.f5 {
-    width:250px !important;
-}
     /* gray feature (последний блок преимуществ)*/
 .gray-feature {
     display: flex;
@@ -434,8 +406,7 @@ background-color: var(--white);
     margin:0;
     padding: 0;
     background-color: var(--gray);
-    
-    }
+}
 .gray-feature li {
     height: 256px;
     
@@ -451,7 +422,6 @@ background-color: var(--white);
     padding: 0;
     width: 400px;    
 }
-
 .gray-feature h3 {
     width: 150px;
 }
@@ -473,8 +443,7 @@ background-color: var(--white);
     line-height: 24px;
     color: var(--black-text);
     margin-top: 56px;
-    width: 440px;
-    
+    width: 440px;  
 }
 .interested p {
     font-size: 14px;
@@ -482,8 +451,7 @@ background-color: var(--white);
     color: var(--black-text);
     margin: 0;
     padding: 0;
-    margin-bottom: 11px
-  
+    margin-bottom: 11px 
 }
 .interested a {
     background-color: var(--blue);
@@ -498,8 +466,6 @@ background-color: var(--white);
     background-color: var(--darker-blue);
     color: var(--white-opacity);
     }
-
-/*дальше тут должен быть попап, и по идее "поиск гостиницы" уже должен быть в нем*/
 .map {
     width:1200px;
     height:594px;
@@ -527,16 +493,18 @@ background-color: var(--white);
 }
 .social {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 0;
     padding: 0;
     align-items: center;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 11px;
     margin-right: 1px;
 }
-
-
+.social li {
+    margin-top: 6px;
+}
 .footer {
     background-color: var(--background-footer);
     text-align:center;
@@ -551,7 +519,6 @@ background-color: var(--white);
     z-index: 1;  
     margin-top: -121px;
 }
-
 .info {
     font-size: 21px;
     line-height: 26px;
@@ -569,20 +536,17 @@ margin-top: 0;
 .info a {
     color:inherit;
 }
-
 .social ul{
     display: flex;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
     flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
 }
 .social-button {
   display: flex;
-  
-  
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -594,35 +558,21 @@ margin-top: 0;
 .social li { 
     list-style-type:none;
 }
-
-
 .footer-copyright {
     font-size: 14px;
     line-height: 26px;
-    margin: 0;
-   
+    margin: 0; 
 }
-
 .social a:hover {
     background-color: var(--dark-blue);
 }
 .social a:focus {
-    background-color: var(--darker-blue);
-    
+    background-color: var(--darker-blue);  
 }
 .social-button:focus path{
 fill-opacity: 0.3;
 }
     /* footer-copiright*/
-.footer-copyright a {
-    background-image: url();
-}
-.footer-copyright a:hover {
-    background-image: url();
-}
-.footer-copyright a:focus {
-    background-image: url();
-}
 .div-copyright {
     display:flex;
     width: 198px; 
@@ -631,8 +581,7 @@ fill-opacity: 0.3;
     justify-content: space-between;
     margin-left: 65px;
     margin-top: 19px;
-    }
-
+}
 .div-copyright a:hover path {
     fill: var(--blue);
 }
@@ -642,8 +591,8 @@ fill-opacity: 0.3;
 
 
                     /* HOTEL  */
-.active {
-    color: var(--blue) !important;
+.active {  
+    color: var(--blue) !important;  /* Important для выделения  страницы на которой находимся*/
 }
             .filter {      /* фильтр для сортировки*/
     font-size: 21px;
@@ -652,17 +601,17 @@ fill-opacity: 0.3;
     margin-bottom: 25px;
      margin-left: 73px;
     width: 126px;
-    }
+}
 .sort-header {
     font-size: 12px;
     line-height: 18px;
     color: var(--black-text); 
      margin-left: 37px;
      margin-bottom: 20px;   
-    }
-
+}
 .sorting {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     justify-content: space-between;
@@ -670,8 +619,7 @@ fill-opacity: 0.3;
     line-height: 18px;
     list-style: none;
     color: var(--black-text);
-    margin-bottom: 10px;
-    /*opacity: 0.3;*/   
+    margin-bottom: 10px;  
     margin-left: 40px;
     width: 239px;
 }
@@ -679,8 +627,7 @@ fill-opacity: 0.3;
     font-size: 12px;
     line-height: 18px;
     list-style: none;
-    color: var(--black-text);
-    /*opacity: 0.3;*/   
+    color: var(--black-text);  
 }
 .underline {
     opacity: 0.3;
@@ -694,10 +641,12 @@ fill-opacity: 0.3;
     border-bottom: none;
     opacity: 1;
 }
-.active-sorting {
-    color: var(--blue) !important;
-    
-    
+
+/*.active-sorting { !запасной вариант подсветки!
+      color: var(--blue) /*!important;
+}*/ 
+.sorting li:first-child a  {
+    color: var(--blue) 
 }
             /* change color of triangle */
 .sorting-triangle li {
@@ -705,13 +654,10 @@ fill-opacity: 0.3;
 }
 .not-active-triangle a:hover path {
     fill: var(--black-text);
-  
 }
 .not-active-triangle a:active path {
     fill:var(--blue); 
 }
-
-
 .triangle-active {
     margin-left: 12px;
     margin-top: 1px;
@@ -750,17 +696,17 @@ fill-opacity: 0.3;
     color: var(--white);
     width: 110px;
     height: 27px;
-  padding: 3px 17px 3px;
-  box-sizing: border-box;
-  margin-right: 6px;
-  
+    padding: 3px 17px 3px;
+    box-sizing: border-box;
+    margin-right: 6px;
 }
 .hotel-detals a{
     text-align: center;
     vertical-align: middle;
 }
-.f4 {
+.position-reservation {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -803,7 +749,6 @@ fill-opacity: 0.3;
     margin-top: 42px;
 }
 
-
             /* flex hotel*/
 
         /* popap filter*/
@@ -837,7 +782,6 @@ fill-opacity: 0.3;
 .type-of-housing ul {
     margin-top: 26px;
 }
-
 .filter-option label {
     font-size: 14px;
     line-height: 21px;
@@ -848,8 +792,6 @@ fill-opacity: 0.3;
     cursor: pointer;
     user-select: none;
 } 
-
-
   /* filter-main*/
   .filter-main fieldset{
     padding: 0;
@@ -861,9 +803,7 @@ fill-opacity: 0.3;
     margin: 0;
     list-style: none;
 }
-
-
-.no-check + label::before {         /* класс no-check  чтобы нормально отобразить не выбранные квадратики, а должен быть .filter-input-checkbox*/
+.filter-input-checkbox + label::before {        
     content: "";
     position: absolute;
     left: -37px;
@@ -881,34 +821,28 @@ fill-opacity: 0.3;
     top: 0px;
     width: 27px;
     height: 23px;
+    background-image: none;
     background: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
         /* range */
 .range {
-    display: flex;
+   /* display: flex;*/
     padding: 0;
-   /* height: 100%;
-    align-items: center;*/
     margin-left: 348px;
     width: 400px; 
     margin-bottom: 13px;
     height: 160px; 
 }
-.f3 {
+.price-in-day {
     margin-top: 5px;
     margin-bottom:0 ;
-    
 }
 .filter-item {
-    
     padding: 0;
     border: none;
     width: 135px;
-    /*margin-top: 0;*/
 }
 .filter-item legend {
     font-family: inherit;
@@ -923,8 +857,6 @@ fill-opacity: 0.3;
 }
 .range-control {
     height: 40px;
-   /* margin-bottom: 33px;*/
-   /* padding-top: 10px;*/
    margin-top: 20px;
     position: relative;
 }
@@ -933,13 +865,11 @@ fill-opacity: 0.3;
     background: var(--range-opacity);
     margin-left: 2px;
     width: 318px;
-    
 }
 .range-control .bar {
     width: 80%;
     height: 2px;
-    background: var(--white); 
-   
+    background: var(--white);   
 }
 .range-control .toggle {
     position: absolute;
@@ -963,24 +893,21 @@ fill-opacity: 0.3;
 .toggle:hover {
     transform: scale(1.2 , 1.2)
 }
-
 .price-control input {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
     width: 150px;
-  text-align: center;
-  color: var(--white);
-  border:none;
-  background: none;
+    text-align: center;
+    color: var(--white);
+    border:none;
+    background: none;
 }
-/* разделительная палочка  на стоимости, надо придумать отступы сверху и снизу*/
 .min-price {
     display: inline-block;
     margin-top: 4px;
     border-right: 2px solid var(--white);    
 }
-
 .price-control {
     margin-bottom: 0px;
     margin-top: 12px;
@@ -989,7 +916,6 @@ fill-opacity: 0.3;
     width:315px;
     height: 31px;
 }
-
 .range form{
     height:145px;
 }
@@ -999,29 +925,25 @@ fill-opacity: 0.3;
     margin-left:87px;}
 .look-button a {
     border: 2px solid var(--white);
-    width: 132px;
-    height: 32px;
+    padding: 4px 32px 6px 34px;
     margin-bottom: 32px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin:0;
-    padding: 0;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);  
 }
-    
-   
 .look-button a:hover{
     color: var(--black-text);
-    background-color: var(--white);
-    
+    background-color: var(--white);   
 }
-
         /* hotels main*/
 .flex-sort {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--white);
     align-items: center;
     border-bottom: 1px solid var(--line-gray);
@@ -1029,25 +951,17 @@ fill-opacity: 0.3;
     margin: 0;
     padding: 0;
 }
-
-
-
 .sorting-triangle {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-right: 73px;
     margin-left: 503px;
 }
 /* flex content*/
-/*.content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;    
-}*/
+
     /*grid content*/
 .content {
     display: grid;
@@ -1057,6 +971,7 @@ fill-opacity: 0.3;
 }
 .catalog-item {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -1064,8 +979,7 @@ fill-opacity: 0.3;
     border-bottom: 1px solid var(--line-gray);
 }
         /* hotel box*/
-.hotel-image {
-    
+.hotel-image {   
     height: 90px;
     width: 135px;
     margin-left: 73px;
@@ -1079,7 +993,6 @@ fill-opacity: 0.3;
     margin-top: 22px;
     margin-bottom: 8px;
 }
-
 .rating-box {
     display:flex;
     flex-direction: column;
@@ -1088,7 +1001,6 @@ fill-opacity: 0.3;
     padding: 0;
     margin-left: 522px;
     min-height: 150px;
-    
 }
 .star-rating {
     margin-top: 28px;
@@ -1097,32 +1009,22 @@ fill-opacity: 0.3;
     margin-left: 2px;
 }
 .price-2 {
-display: flex;
-
-margin: 0;
-padding: 0;
-
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 .price-2 p {
-    
     margin: 0;
 }
 .price-2 p:first-child{
     width: 107px;
-    
    margin-right: 9px;
 }
-
-
-
-
-            /* modal window*/
-
-            
+            /* modal window*/           
 .body {
     position: relative;
 }
-
 .modal {
     display:flex;
     position: absolute;
@@ -1137,6 +1039,7 @@ padding: 0;
     height:481px;
     box-shadow: 0px 7px 15px var(--box-shadow-modal);
 }
+        /* open/closed modal window*/
 .modal-none {
     display: none;
     animation: bounce 0.6s;
@@ -1154,15 +1057,12 @@ padding: 0;
           transform: translateY(00px);
         }
       } 
-
-  
 .search-hotels {
     width:568px;
     color: var(--white);
     font-weight: normal;
     font-size: 21px;
     line-height: 26px;
-    
     margin-bottom: 0px;
 }
 .modal-search {
@@ -1170,6 +1070,7 @@ padding: 0;
 }
 .search-hotels a {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-weight: normal;
@@ -1191,15 +1092,30 @@ padding: 0;
 .input-field {
     height:395px;
     display: flex;
+    flex-wrap: wrap;
    flex-direction: column;
-  /* width: 38px;*/
-  
-   
 }
 .input-field ul{
-    list-style: none;
+    list-style: none;   
 }
-
+.input-field ul:first-child{
+    margin-top: 29px;
+}
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 40px;
+    padding: 0;
+    flex-wrap: nowrap;  
+}
+.people li:first-child {
+    margin-right: 39px;
+}
+.people input{
+    width: 36px;
+    border: none;
+}
 .appointment-item {
     display:flex;
     align-items: center;
@@ -1209,29 +1125,12 @@ padding: 0;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
-    margin-top: 15px;
+    margin-top: 1px;
     margin-left: 15px;
     margin-bottom: 28px;
 }
 .input-field li:nth-child(2){
-    margin-bottom:15px;
-}
-
-.people {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-wrap: nowrap;
-   
-}
-.people li:first-child {
-    margin-right: 39px;
-}
-.people input{
-    width: 36px;
-    border: none;
-}
-
+    margin-bottom:15px;}
 .search-button {
     display:flex;
     align-items: center;
@@ -1241,7 +1140,7 @@ padding: 0;
     width: 458px;
     height: 58px;
     background-color: var(--blue);
-    margin-top: 13px;
+    margin-top: 27px;
     font-family: inherit;
     font-size: 21px;
     line-height: 26px;
@@ -1272,18 +1171,18 @@ padding: 0;
 .residence-time svg {
     margin-left: 30px;
 }
-.appointment-item label {
+.appointment-item p {
     margin-right: 27px;
 }
-.residence-time label {
+.residence-time p {
     margin-right: 21px;
 }
-.people-1 label {
+.people-1 p {
     margin-right: 40px;
 }
-
 .input-back {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: var(--background-main);
@@ -1291,7 +1190,6 @@ padding: 0;
     width: 327px;
     padding: 0 9px;
 }
-
 .input-back:hover {
 background-color: var(--gray-after-hover);
 }
@@ -1301,6 +1199,7 @@ background-color: var(--gray-after-hover);
 }
 .input-back-people {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: var(--background-main);
@@ -1308,9 +1207,10 @@ background-color: var(--gray-after-hover);
     width: 95px;
     padding: 0 9px;
 }
-
 .input-back-people input {
     background-color: var(--background-main);
+    width: 10px;
+    padding-left: 5px;
 }
 .people-1 {
     margin-right: 50px;
@@ -1318,7 +1218,6 @@ background-color: var(--gray-after-hover);
 .plus-place svg {
     margin-right: 4px;
     margin-top: 3px;
-
 }
 .appointment-item svg:hover path {
     fill: var(--blue);
