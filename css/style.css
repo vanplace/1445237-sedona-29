@@ -72,6 +72,9 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.shadow {
+    box-shadow: 0px 5px 15px var(--box-shadow-main)
+}
                 /* Grid*/
 .page {
     height: 100%;
@@ -82,11 +85,17 @@ img {
     grid-template-rows: min-content 1fr min-content;
     align-content: start; 
 }
+.page-body-hotel {  /* доп класс по причине малого объема содержимого блока (чтобы футер прилип обратно)*/
+    
+    display:grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start; 
+}
                 /*Main header*/
 .main-header {
     width:1200px;
     margin: 0 auto;
-     box-shadow: 0px 5px 15px var(--box-shadow-main);
+    box-shadow: 0px 5px 15px var(--box-shadow-main);
 }
                
                 /* Main navigation*/
@@ -513,6 +522,7 @@ background-color: var(--white);
     outline-offset: -5px;
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0px 5px 15px var(--box-shadow-main)
 }
 .index-footer {
     margin:0 auto;
