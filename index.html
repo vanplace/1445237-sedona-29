@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="page-body">
@@ -172,11 +172,11 @@
         <div class="search-hotels modal-search">
           <a href="#">Поиск гостиницы в седоне</a>
         </div>
-        <div class="input-field">
+        <form class="input-field" action="https://echo.htmlacademy.ru" method="post">
           <ul>
           <li class="appointment-item residence-time">
               
-            <p>Дата заезда:&nbsp;</p>
+            <label>Дата заезда:&nbsp;</label>
             <div class="input-back">
               <input type="text" name="date" placeholder="24 апреля 2017">
               <svg aria-hidden="true" focusable="false" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
@@ -186,7 +186,7 @@
             </div>
           </li>
           <li class="appointment-item residence-time">
-            <p>Дата выезда:</p>
+            <label>Дата выезда:</label>
             <div class="input-back">
               <input type="text" name="date" placeholder="4 июля 2017">
               <svg aria-hidden="true" focusable="false" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
@@ -198,7 +198,7 @@
           </ul>
           <ul class="people">
           <li class="appointment-item people-1 plus-place">
-            <p>взрослые:</p>
+            <label>взрослые:</label>
             <div class="input-back-people ">
             
               <div class="minus">
@@ -211,7 +211,7 @@
             </div>
           </li>
           <li class="appointment-item plus-place">
-            <p>Дети:</p>
+            <label>Дети:</label>
             <div class="input-back-people">             
                 <div class="minus">
                 </div> 
@@ -223,9 +223,9 @@
           </li>
           
           </ul>
-          <a href="#" class="search-button"> Найти</a> 
+          <button class="search-button" type="submit"> Найти</button> 
 
-        </div>
+        </form>
       </section>
     <script src="js/script.min.js"></script>
   

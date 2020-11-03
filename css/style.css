@@ -177,7 +177,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-     /*box-shadow: 0px 5px 15px var(--box-shadow-main);*/
+    background-color:  var(--PicDidntLoad);
 }
 .first-screen::before {
     content:"";
@@ -186,7 +186,7 @@ img {
     left:0px;
     width: 1200px;
     height: 57px;
-    background-image: url("../img/Shape.png");
+    background-image: url("../img/shape.png");
     background-repeat: no-repeat;
     background-position: 0 0;    
 }    
@@ -327,7 +327,6 @@ background-color: var(--white);
 .features-under-list {
     display: flex;
     flex-wrap: wrap;
-   /* height: 330px;  /* с учетом расстояние для иконок*/
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -336,7 +335,7 @@ background-color: var(--white);
     background-color: var(--white); 
 }
 .features-under-list li {
-    height: 330px;
+    min-height: 330px;
 }
 .features-under-list-item b {
     font-size: 21px;
@@ -601,8 +600,8 @@ fill-opacity: 0.3;
 
 
                     /* HOTEL  */
-.active {  
-    color: var(--blue) !important;  /* Important для выделения  страницы на которой находимся*/
+.active a {  
+    color: var(--blue);
 }
             .filter {      /* фильтр для сортировки*/
     font-size: 21px;
@@ -652,9 +651,6 @@ fill-opacity: 0.3;
     opacity: 1;
 }
 
-/*.active-sorting { !запасной вариант подсветки!
-      color: var(--blue) /*!important;
-}*/ 
 .sorting li:first-child a  {
     color: var(--blue) 
 }
@@ -772,6 +768,7 @@ fill-opacity: 0.3;
     font-size: 16px;
     line-height: 21px;
     background-image: url("../img/background-hotel.jpg");
+    background-color: var(--PicDidntLoad);
 }
 .infrastructure {
     display: inline-block;
@@ -1152,9 +1149,11 @@ fill-opacity: 0.3;
     background-color: var(--blue);
     margin-top: 27px;
     font-family: inherit;
+    text-transform: uppercase;
     font-size: 21px;
     line-height: 26px;
     color: var(--white);
+    border: none;
 }
 .search-button:hover {
     background-color: var(--dark-blue);
@@ -1181,13 +1180,13 @@ fill-opacity: 0.3;
 .residence-time svg {
     margin-left: 30px;
 }
-.appointment-item p {
+.appointment-item label {
     margin-right: 27px;
 }
-.residence-time p {
+.residence-time label {
     margin-right: 21px;
 }
-.people-1 p {
+.people-1 label {
     margin-right: 40px;
 }
 .input-back {
