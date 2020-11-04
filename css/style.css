@@ -343,7 +343,7 @@ background-color: var(--white);
     font-weight: bold;
     color: var(--black-text);
     display: inline-block;
-    margin-top: 162px;
+    margin-top: 159px;
     margin-bottom: 26px; 
 }
 .features-under-list-item p {
@@ -352,7 +352,7 @@ background-color: var(--white);
 .house b::before {
     content:"";
     position:absolute;
-    top: 63px;
+    top: 60px;
     left:105px;
     width: 74.69px;
     height: 72px;
@@ -363,7 +363,7 @@ background-color: var(--white);
 .eat b::before {
     content:"";
     position:absolute;
-    top: 63px;
+    top: 60px;
     left:105px;
     width: 74.69px;
     height: 70px;
@@ -374,7 +374,7 @@ background-color: var(--white);
 .souvenirs b::before {
     content:"";
     position:absolute;
-    top: 57px;
+    top: 55px;
     left:110px;
     width: 74.69px;
     height: 77px;
@@ -520,6 +520,7 @@ background-color: var(--white);
     text-decoration:none;
     outline-offset: -5px;
     width: 1200px;
+    min-height: 120px;
     margin: 0 auto;
     box-shadow: 0px 5px 15px var(--box-shadow-main)
 }
@@ -772,19 +773,19 @@ fill-opacity: 0.3;
 }
 .infrastructure {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 69px;
     margin-top: 26px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 .infrastructure ul {
     margin-top: 26px;
 }
 .type-of-housing {
     display: inline-block;
-    margin-left: 112px;
+    margin-left: 117px;
     margin-top: 25px;
     width:400px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 .type-of-housing ul {
     margin-top: 26px;
@@ -861,9 +862,9 @@ fill-opacity: 0.3;
 .range {
    /* display: flex;*/
     padding: 0;
-    margin-left: 348px;
+    margin-left: 347px;
     width: 400px; 
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     height: 160px; 
 }
 .price-in-day {
@@ -888,7 +889,7 @@ fill-opacity: 0.3;
 }
 .range-control {
     height: 40px;
-   margin-top: 20px;
+   margin-top: 21px;
     position: relative;
 }
 .range-control .scale {
@@ -928,7 +929,7 @@ fill-opacity: 0.3;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
-    width: 150px;
+    width: 148px;
     text-align: center;
     color: var(--white);
     border:none;
@@ -937,11 +938,12 @@ fill-opacity: 0.3;
 .min-price {
     display: inline-block;
     margin-top: 4px;
-    border-right: 2px solid var(--white);    
+    border-right: 2px solid var(--white);
+    margin-left: 4px;    
 }
 .price-control {
     margin-bottom: 0px;
-    margin-top: 12px;
+    margin-top: 15px;
     margin-left: 1px;
     border: 2px solid var(--white);
     width:315px;
@@ -953,7 +955,8 @@ fill-opacity: 0.3;
 .look-button {
     display: inline-block;
     margin-bottom: 0px;
-    margin-left:87px;}
+    margin-left:87px;
+}
 .look-button a {
     border: 2px solid var(--white);
     padding: 4px 32px 6px 34px;
@@ -1112,6 +1115,7 @@ fill-opacity: 0.3;
     padding: 0;
     color:var(--white);
     background: var(--light-brown);
+    font-weight: bold;
 }
 .search-hotels a:hover {
     background-color: var(--brown);
@@ -1174,6 +1178,7 @@ fill-opacity: 0.3;
     margin-top: 27px;
     font-family: inherit;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--white);
