@@ -833,6 +833,30 @@ fill-opacity: 0.3;
     background-repeat: no-repeat;
     background-position: center;
 }
+.filter-input-checkbox:disabled +label::before {
+    content:"";
+    position: absolute;
+    left: -37px;
+    top: 0px;
+    width: 27px;
+    height: 23px;
+    background-image: none;
+    background: url("../img/checkbox-off-dissabled.svg");
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.filter-input-checkbox:disabled:checked + label::before {
+    content:"";
+    position: absolute;
+    left: -37px;
+    top: 0px;
+    width: 27px;
+    height: 23px;
+    background-image: none;
+    background: url("../img/checkbox-on-dissabled.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
         /* range */
 .range {
    /* display: flex;*/
